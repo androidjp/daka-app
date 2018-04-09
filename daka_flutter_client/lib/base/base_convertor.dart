@@ -5,7 +5,7 @@ abstract class BaseConvertor<T> {
 
   List<T> jsonToObjectArray(String jsonStr){
     return JSON
-        .decode(jsonStr)['subjects']
+        .decode(jsonStr)
         .map((obj) => fromMap(obj))
         .toList();
   }
